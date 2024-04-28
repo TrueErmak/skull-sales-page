@@ -37,6 +37,7 @@ body, html {
 /* ------------------   all for drop dowm menu ---------------------------------------*/
 
 /* Add or modify CSS as needed based on your design requirements */
+/* Add or modify CSS as needed based on your design requirements */
 .chess-set {
   margin-bottom: 20px; /* Ensures spacing between sets */
   position: relative; /* Set chess-set position to relative */
@@ -47,14 +48,18 @@ body, html {
   list-style: none;
   padding: 0;
   margin: 0;
-  background: #47bae1;
+  background: #7bc4e9;
   border: 1px solid #ccc;
   border-radius: 4px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow for depth */
   position: absolute;
   width: 200px;
-  top: 0;
-  left: -210px;
+  top: 0; /* Position the menu at the top */
+  left: 0; /* Align the menu with the left edge */
+  display: grid; /* Use grid layout */
+  grid-template-columns: repeat(4, 1fr); /* Display items in 4 columns */
+  gap: 10px; /* Add gap between items */
+  width: calc(100% - 20px); /* Adjust width to account for gap */
   z-index: 999;
 }
 
