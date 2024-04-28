@@ -1,0 +1,69 @@
+/* General reset and base styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-image: url('/public/images/water.gif'); 
+  background-repeat: no-repeat; /* Prevent the GIF from repeating */
+  background-size: cover; /* Cover the entire viewport with the GIF */
+  background-attachment: fixed; /* Keep the background fixed when scrolling */
+}
+
+/* Main application styling */
+.app {
+  text-align: center;
+  padding: 20px;
+}
+
+.chess-set {
+  margin: 20px auto;
+  padding: 20px;
+  background: #47bae1;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  width: 80%;
+  max-width: 600px;
+}
+
+.chess-set img {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+
+
+/* ------------------   all for drop dowm menu ---------------------------------------*/
+
+/* Add or modify CSS as needed based on your design requirements */
+.chess-set {
+  margin-bottom: 20px; /* Ensures spacing between sets */
+  position: relative; /* Set chess-set position to relative */
+}
+
+/* Add or modify CSS to enhance the visual appeal of the dropdown menu */
+.dropdown-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background: #47bae1;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow for depth */
+  position: absolute;
+  width: 200px;
+  top: 0;
+  left: -210px;
+  z-index: 999;
+}
+
+.dropdown-menu li {
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Add a smooth transition effect */
+}
+
+.dropdown-menu li:hover {
+  background-color: #8d1010; /* Change background color on hover */
+}
