@@ -7,7 +7,10 @@ const chessSets = [
   {
     id: 1,
     title: 'White & Black With Board',
-    images: ['/images/chess1.jpg'],
+    images: ['/images/chess1.jpg',
+    '/images/chess3-2.jpeg',
+    '/images/chess2-1.jpeg'
+  ],
     videos: [ ],
     description: 'Description of Chess Set 1...',
   },
@@ -29,7 +32,7 @@ const chessSets = [
   {
     id: 3,
     title: 'Green and Blue Chess Set',
-    images: ['/images/chees 3.jpg'],
+    images: ['/images/chees 3.jpg',],
     videos: [ ],
     description: 'This is a green and blue chess set. The pieces are nice to show off here.',
   }
