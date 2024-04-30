@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
-import Lightbox from 'react-modal-image';
 import './styles.css';
 
 const chessSets = [
   {
     id: 1,
+
     title: 'sales item 1',
     images: ['/images/chess1.jpg',
     '/images/chess3-2.jpeg',
@@ -36,62 +36,20 @@ const chessSets = [
     videos: [ ],
     description: 'This is a green and blue chess set. The pieces are nice to show off here.',
   }
+
 ];
 
-
-function ChessSet({ title, images, videos, description }) {
-  const [isOpen, setIsOpen] = useState(true); // Set initial state to true to display images by default
-  const [currentMedia, setCurrentMedia] = useState(images[0]); // Set the first image as the initial current media
-  const [currentMediaType, setCurrentMediaType] = useState('image'); // Set the initial media type to image
-
-  const toggleDropdown = () => {
-    setIsOpen(!isOpen);
-  };
-
+function ChessSet({ id, title, salesPageLink, description }) {
   return (
     <div className="chess-set">
       <h2>{title}</h2>
-      <button onClick={toggleDropdown}>{isOpen ? 'Hide Media' : 'View Media'}</button>
-      {isOpen && (
-        <div>
-          <ul className="dropdown-menu">
-            {images.map((image, index) => (
-              <li key={index} onClick={() => { setCurrentMedia(image); setCurrentMediaType('image'); }}>
-                View Image {index + 1}
-              </li>
-            ))}
-            {videos.map((video, index) => (
-              <li key={index} onClick={() => { setCurrentMedia(video); setCurrentMediaType('video'); }}>
-                View Video {index + 1}
-              </li>
-            ))}
-          </ul>
-          {currentMedia && (
-            <div style={{ marginTop: '10px' }}>
-              {currentMediaType === 'image' ? (
-                <img
-                  src={currentMedia}
-                  alt={`${title} Display`}
-                  style={{ width: '100%', height: 'auto', cursor: 'pointer' }}
-                  onClick={() => {
-                    <Lightbox small={currentMedia} large={currentMedia} alt={`${title} Image`} onCloseRequest={() => setCurrentMedia(images[0])} />;
-                  }}
-                />
-              ) : (
-                <video controls style={{ width: '100%', height: 'auto' }}>
-                  <source src={currentMedia} type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
-              )}
-            </div>
-          )}
-        </div>
-      )}
       <p>{description}</p>
+      <a href={salesPageLink} target="_blank" rel="noopener noreferrer">
+        <button>Visit Sales Page</button>
+      </a>
     </div>
   );
 }
-
 
 function App() {
   const aboutMeUrl = "https://eric-canada.vercel.app/";
