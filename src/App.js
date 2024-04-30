@@ -7,36 +7,18 @@ import './styles.css';
 const chessSets = [
   {
     id: 1,
-    title: 'White & Black With Board',
-    images: ['/images/chess1.jpg',
-    '/images/chess3-2.jpeg',
-    '/images/chess2-1.jpeg'
+    title: 'skull design',
+    images: ['/images/skull1.jpg',
+    '/images/skull2.jpg',
+    '/images/skull3.jpg',
+    '/images/skull4.jpg',
+    '/images/skull5.jpg',
+    '/images/skull6.jpg'
   ],
-    videos: [ ],
-    description: 'Description of Chess Set 1...',
+    videos: ['/videos/skull vid1.mp4', ],
+    description: 'here is an asortment of skulls that can be made',
   },
-  {
-    id: 2,
-    title: 'Star Wars Set',
-    images: [
-      '/images/starWarsSet.jpg',
-      '/images/starwars wheel 1.jpg',
-      '/images/starwars wheel 3.jpg',
-      '/images/starwars wheel 5.jpg',
-      '/images/starwars wheel 6.jpg'
-    ],
-    videos: [
-      '/videos/palpatienOnEnder.mp4', // Add the video here
-    ],
-    description: 'Description of Star Wars Chess Set...',
-  },
-  {
-    id: 3,
-    title: 'Green and Blue Chess Set',
-    images: ['/images/chees 3.jpg',],
-    videos: [ ],
-    description: 'This is a green and blue chess set. The pieces are nice to show off here.',
-  }
+  
 ];
 
 
