@@ -6,7 +6,7 @@ import './styles.css';
 const chessSets = [
   {
     id: 1,
-    title: 'White & Black With Board',
+    title: 'sales item 1',
     images: ['/images/chess1.jpg',
     '/images/chess3-2.jpeg',
     '/images/chess2-1.jpeg'
@@ -16,7 +16,7 @@ const chessSets = [
   },
   {
     id: 2,
-    title: 'Star Wars Set',
+    title: 'sales item 2',
     images: [
       '/images/starWarsSet.jpg',
       '/images/starwars wheel 1.jpg',
@@ -31,7 +31,7 @@ const chessSets = [
   },
   {
     id: 3,
-    title: 'Green and Blue Chess Set',
+    title: 'sales item 3',
     images: ['/images/chees 3.jpg',],
     videos: [ ],
     description: 'This is a green and blue chess set. The pieces are nice to show off here.',
